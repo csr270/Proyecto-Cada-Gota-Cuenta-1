@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cada Gota Cuenta — Vida Verde del Plantel</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #e8f4f2;
+    padding: 25px;
+    color: #1e2d2f;
+  }
+
+  h1, h2, h3 { color: #1b3c40; }
+
+  .portada {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #ffffff, #daf3ef);
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    margin-bottom: 35px;
+    animation: fadeIn 1s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);} 
+    to { opacity: 1; transform: translateY(0);} 
+  }
+
+  .grid-fichas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+  }
+
+  .ficha {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: 330px;
+    overflow-y: auto;
+  }
+
+  .ficha::-webkit-scrollbar { width: 6px; }
+  .ficha::-webkit-scrollbar-thumb {
+    background: #6da8a0;
+    border-radius: 4px;
+  }
+
+  .ficha:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+  }
+
+  .ficha img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para la matriz semáforo */
+  .semáforo { width: 100%; border-collapse: collapse; margin-top: 30px; }
+  .semáforo th, .semáforo td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+  .dot { display:inline-block; width:14px; height:14px; border-radius:50%; margin-right:8px; vertical-align:middle; }
+  .dot.red { background:#e74c3c; }
+  .dot.yellow { background:#f1c40f; }
+  .dot.green { background:#2ecc71; }
+  .legend { font-size:14px; margin-top:8px; }
+</style>
+</head>
+<body>
+
+<div class="portada">
+  <h1>Cada Gota Cuenta: El Agua que Da Vida</h1>
+  <h3>Plantel Ciudad Satélite Morelos</h3>
+  <h4>Humanidades 2</h4>
+</div>
+
+<section>
+  <h2>Introducción</h2>
+  <p>
+    El siguiente documento reúne las fichas botánicas de diversas especies que habitan el plantel. Se incluye información detallada
+    de su origen, características principales, tolerancia al clima, beneficios ecológicos y, especialmente, sus necesidades de riego.
+    Cada planta juega un papel fundamental en el equilibrio ambiental, y conocer su cuidado adecuado permite mantener un ecosistema
+    sano y funcional.
+  </p>
+</section>
+
+<hr/>
+<h2>Fichas Informativas</h2>
+
+<div class="grid-fichas">
+
+  <!-- CARAMBOLA -->
+  <div class="ficha">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.8XcgJvBo0ejDipCcD24NVwHaHa?pid=Api&P=0&h=180" />
+    <h3>Árbol de Carambola</h3>
+    <p><strong>Nombre científico:</strong> <em>Averrhoa carambola</em></p>
+    <p><strong>Origen:</strong> Sudeste Asiático.</p>
+    <p><strong>Morfología:</strong> Árbol pequeño, hojas compuestas y fruto amarillo en forma de estrella.</p>
+    <p><strong>Beneficios:</strong> Fruto rico en vitamina C, antioxidantes y fibra.</p>
+    <p><strong>Hábitat:</strong> Prefiere climas tropicales húmedos.</p>
+    <p><strong>Riego:</strong> <u>Medio–Alto</u>. Necesita humedad constante; ideal 2–3 riegos por semana.</p>
+  </div>
+
+  <!-- GRANADO -->
+  <div class="ficha">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.KduvPTmOWAISjgOvJohBswHaHa?pid=Api&P=0&h=180" />
+    <h3>Granado</h3>
+    <p><strong>Nombre científico:</strong> <em>Punica granatum</em></p>
+    <p><strong>Origen:</strong> Asia Occidental.</p>
+    <p><strong>Características:</strong> Arbusto resistente, tronco retorcido y fruto rojo con semillas jugosas.</p>
+    <p><strong>Beneficios:</strong> Fruto antioxidante, atrae polinizadores.</p>
+    <p><strong>Riego:</strong> <u>Bajo</u>. 1 riego profundo semanal en temporada seca.</p>
+  </div>
+
+  <!-- BARBERIS -->
+  <div class="ficha">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.L5prHtAxawCH3-fHYKQrwQHaFV?pid=Api&P=0&h=180" />
+    <h3>Barberis</h3>
+    <p><strong>Nombre científico:</strong> <em>Berberis vulgaris</em></p>
+    <p><strong>Origen:</strong> Europa y Asia.</p>
+    <p><strong>Características:</strong> Arbusto espinoso muy resistente y de frutos rojos.</p>
+    <p><strong>Beneficios:</strong> Aporta refugio a fauna pequeña, tolera sequía.</p>
+    <p><strong>Riego:</strong> <u>Bajo</u>. Cada 10–12 días; evitar encharcamiento.</p>
+  </div>
+
+  <!-- MIMOSA -->
+  <div class="ficha">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.w9os5KbOOv0NTPgY-_ADPgAAAA?pid=Api&P=0&h=180" />
+    <h3>Árbol de Mimosa</h3>
+    <p><strong>Nombre científico:</strong> <em>Albizia julibrissin</em></p>
+    <p><strong>Origen:</strong> Asia oriental.</p>
+    <p><strong>Características:</strong> Flores rosadas plumosas, hojas delicadas.</p>
+    <p><strong>Beneficios:</strong> Atrae mariposas y abejas.</p>
+    <p><strong>Riego:</strong> <u>Medio</u>. 1–2 veces por semana; sensible al exceso.</p>
+  </div>
+
+  <!-- PALMERA DATILERA -->
+  <div class="ficha">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.7kL7iTr0ACededY5MbhxMgHaEx?pid=Api&P=0&h=180" />
+    <h3>Palmera Datilera</h3>
+    <p><strong>Nombre científico:</strong> <em>Phoenix dactylifera</em></p>
+    <p><strong>Origen:</strong> África del Norte.</p>
+    <p><strong>Características:</strong> Palma alta, hojas en penacho.</p>
+    <p><strong>Beneficios:</strong> Produce dátiles y estabiliza suelos arenosos.</p>
+    <p><strong>Riego:</strong> <u>Bajo–Medio</u>. Riegos profundos cada semana.</p>
+  </div>
+
+  <!-- FLAMBOYÁN -->
+  <div class="ficha">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.GBDDsEaWc6N6v789Ozd57QHaNK?pid=Api&P=0&h=180" />
+    <h3>Flamboyán</h3>
+    <p><strong>Nombre científico:</strong> <em>Delonix regia</em></p>
+    <p><strong>Origen:</strong> Madagascar.</p>
+    <p><strong>Características:</strong> Copa amplia, flores rojas muy llamativas.</p>
+    <p><strong>Riego:</strong> <u>Medio</u>. Mantener humedad moderada, 2 veces/semana.</p>
+  </div>
+
+  <!-- KOELREUTERIA -->
+  <div class="ficha">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.wiMM9RJUvQgKx3EWcn0MKwHaKM?pid=Api&P=0&h=180" />
+    <h3>Koelreuteria paniculata</h3>
+    <p><strong>Origen:</strong> China y Corea.</p>
+    <p><strong>Características:</strong> Árbol ornamental con flores amarillas y frutos tipo farol.</p>
+    <p><strong>Riego:</strong> <u>Bajo–Medio</u>. Cada 7–10 días.</p>
+  </div>
+
+  <!-- LILO -->
+  <div class="ficha">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.RIETA6LQ-znuyyu-3yfgqQHaJ4?pid=Api&P=0&h=180" />
+    <h3>Lilo común</h3>
+    <p><strong>Nombre científico:</strong> <em>Syringa vulgaris</em></p>
+    <p><strong>Origen:</strong> Europa del Este.</p>
+    <p><strong>Características:</strong> Arbusto aromático con flores lilas.</p>
+    <p><strong>Riego:</strong> <u>Medio</u>. Prefiere humedad constante.</p>
+  </div>
+
+  <!-- CACTUS COLUMNARIOS -->
+  <div class="ficha">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.klDMyR_-6IqeJEiQHwAuTwHaJ3?pid=Api&P=0&h=180" />
+    <h3>Cactus Columnarios</h3>
+    <p><strong>Género:</strong> <em>Cereus</em> / <em>Pachycereus</em></p>
+    <p><strong>Características:</strong> Tallos altos, verde‑azulados, muy resistentes.</p>
+    <p><strong>Riego:</strong> <u>Muy bajo</u>. 1 vez cada 20–30 días.</p>
+  </div>
+
+  <!-- NOPAL -->
+  <div class="ficha">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Opuntia_cactus.jpg" />
+    <h3>Nopal</h3>
+    <p><strong>Género:</strong> <em>Opuntia</em></p>
+    <p><strong>Características:</strong> Cladodios en forma de paleta, floración vistosa.</p>
+    <p><strong>Beneficios:</strong> Comestible, altamente tolerante a clima extremo.</p>
+    <p><strong>Riego:</strong> <u>Muy Bajo</u>. Cada 15–25 días.</p>
+  </div>
+
+</div>
+
+<!-- AÑADIDO: MATRIZ SEMÁFORO -->
+<hr/>
+<h2>Matriz Semáforo de Necesidades de Riego</h2>
+<p>Interpretación rápida: <span class="dot red"></span> Alto — frecuentes / <span class="dot yellow"></span> Medio — riego regular / <span class="dot green"></span> Bajo — resistente a sequía</p>
+<table class="semáforo">
+  <thead>
+    <tr>
+      <th style="width:40%">Especie</th>
+      <th>Necesidad (Semáforo)</th>
+      <th>Tipo de riego sugerido</th>
+      <th>Comentario</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Árbol de Carambola</td>
+      <td><span class="dot yellow"></span> Medio–Alto</td>
+      <td>Goteo localizado + riegos superficiales frecuentes</td>
+      <td>Frutal; mantener humedad superficial sin encharcar.</td>
+    </tr>
+    <tr>
+      <td>Granado</td>
+      <td><span class="dot green"></span> Bajo</td>
+      <td>Riego por goteo ocasional o riego profundo semanal</td>
+      <td>Tolerante a sequía; mejor riegos profundos y espaciados.</td>
+    </tr>
+    <tr>
+      <td>Barberis</td>
+      <td><span class="dot green"></span> Bajo</td>
+      <td>Riego por aspersión suave ocasional o goteo muy espaciado</td>
+      <td>Arbusto resistente; evitar encharcamientos.</td>
+    </tr>
+    <tr>
+      <td>Árbol de Mimosa</td>
+      <td><span class="dot yellow"></span> Medio</td>
+      <td>Goteo por zona + riegos semanales</td>
+      <td>Más agua en establecimiento; luego moderar.</td>
+    </tr>
+    <tr>
+      <td>Espina de Cristo</td>
+      <td><span class="dot green"></span> Bajo</td>
+      <td>Riego por goteo esporádico</td>
+      <td>Muy tolerante a sequía; riegos espaciados.</td>
+    </tr>
+    <tr>
+      <td>Palmera Datilera</td>
+      <td><span class="dot yellow"></span> Bajo–Medio</td>
+      <td>Goteo profundo en círculo de raíz (riegos semanales)</td>
+      <td>Prefiere riegos profundos para desarrollar raíz.</td>
+    </tr>
+    <tr>
+      <td>Flamboyán</td>
+      <td><span class="dot yellow"></span> Medio</td>
+      <td>Goteo por zona + riegos semanales</td>
+      <td>Riego regular para buena floración durante la temporada seca.</td>
+    </tr>
+    <tr>
+      <td>Koelreuteria paniculata</td>
+      <td><span class="dot yellow"></span> Bajo–Medio</td>
+      <td>Goteo por zona cada 7–10 días</td>
+      <td>Tolerante pero se beneficia de riego en veranos secos.</td>
+    </tr>
+    <tr>
+      <td>Lilo común</td>
+      <td><span class="dot yellow"></span> Medio</td>
+      <td>Goteo por zona o riego superficial moderado</td>
+      <td>Prefiere humedad moderada; evitar encharcamientos.</td>
+    </tr>
+    <tr>
+      <td>Cactus Columnarios</td>
+      <td><span class="dot green"></span> Muy bajo</td>
+      <td>Riego por inundación ligera ocasional o goteo muy espaciado</td>
+      <td>Adaptados a secas; regar solo en periodos muy largos sin lluvia.</td>
+    </tr>
+    <tr>
+      <td>Nopal</td>
+      <td><span class="dot green"></span> Muy bajo</td>
+      <td>Riego por goteo muy espaciado o riego manual ocasional</td>
+      <td>Máxima tolerancia a sequía; riegos raros y profundos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+<footer style="text-align:center; opacity:0.7; margin-top:40px;">
+  Elaborado por César
+</footer>
+
+</body>
+</html>
